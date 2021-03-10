@@ -13,8 +13,9 @@ with open(sys.argv[1]) as f:
 		print(f"Scanning IP: {i}")
 
 		try:
-			output = subprocess.check_output(cmd, shell=True, stderr=subprocess.STDOUT)
-			file.write(output.decode())
+			output = subprocess.check_output(cmd, shell=True, stderr=subprocess.STDOUT).decode()
+			print(output)
+			file.write(output)
 		except subprocess.CalledProcessError:
 			print("Execution of '%s' failed!\n" % cmd)
 			sys.exit(1)

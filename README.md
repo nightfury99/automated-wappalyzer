@@ -26,12 +26,18 @@ yarn install
 yarn run link
 ```
 
-## Usage
+## Usage 
 
-### Command line
+### Command line for one url
 
 ```sh
 node src/drivers/npm/cli.js https://example.com
+```
+
+### Command line for multiple url(in a file)
+
+```sh
+./automate.py url.txt output.txt
 ```
 
 ### Chrome extension
