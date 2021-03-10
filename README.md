@@ -20,7 +20,7 @@
 ## Quick start
 
 ```sh
-git clone https://github.com/nightfury99/wappalyzer.git
+git clone https://github.com/nightfury99/automated-wappalyzer.git
 cd wappalyzer
 yarn install
 yarn run link
